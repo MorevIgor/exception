@@ -31,13 +31,13 @@ public class Repository {
     }
 
     public Product findById(int id){
-        Product result;
+        Product result= null;
         for (Product product: products) {
             if (product.getId() == id){
                 result=product;
             }
         }
-        return null;
+        return result;
     }
 
     public Product[] findAll() {
